@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5F326C07-8046-43FE-9276-E3365FFE9425}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pinnacle</RootNamespace>
+    <AssemblyName>Pinnacle</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\GHRIBM SOFTWARE\Pinnacle Apti Software\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Pinnacle</ProductName>
+    <PublisherName>Mohit Kushwah</PublisherName>
+    <SuiteName>Pinnacle</SuiteName>
+    <ApplicationRevision>7</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>99A8AFA7675AF90B055E613AA7241756E0A0E827</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Pinnacle_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\Downloads\Bunifu UI WinForms 1.9.0.1\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Addcollege.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addcollege.Designer.cs">
+      <DependentUpon>Addcollege.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Addque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addque.Designer.cs">
+      <DependentUpon>Addque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adminpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adminpage.Designer.cs">
+      <DependentUpon>Adminpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoYouWantFinish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoYouWantFinish.Designer.cs">
+      <DependentUpon>DoYouWantFinish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ex.Designer.cs">
+      <DependentUpon>ex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exam.Designer.cs">
+      <DependentUpon>Exam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finish.Designer.cs">
+      <DependentUpon>Finish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instruction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instruction.Designer.cs">
+      <DependentUpon>Instruction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logout.Designer.cs">
+      <DependentUpon>Logout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateQuestions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateQuestions.Designer.cs">
+      <DependentUpon>UpdateQuestions.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Addcollege.resx">
+      <DependentUpon>Addcollege.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Addque.resx">
+      <DependentUpon>Addque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adminpage.resx">
+      <DependentUpon>Adminpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoYouWantFinish.resx">
+      <DependentUpon>DoYouWantFinish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ex.resx">
+      <DependentUpon>ex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exam.resx">
+      <DependentUpon>Exam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finish.resx">
+      <DependentUpon>Finish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instruction.resx">
+      <DependentUpon>Instruction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logout.resx">
+      <DependentUpon>Logout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateQuestions.resx">
+      <DependentUpon>UpdateQuestions.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Pinnacle_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\custom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_button-cross_red_69065.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Close_Icon_Dark_1398917.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Close_Icon_1398919.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG-20190921-WA0040.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

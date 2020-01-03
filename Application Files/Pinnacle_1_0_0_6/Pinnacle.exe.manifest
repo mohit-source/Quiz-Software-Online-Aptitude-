@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Pinnacle.exe" version="1.0.0.6" publicKeyToken="e06fdff7d8a94273" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Pinnacle" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="Pinnacle.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Bunifu.Core.dll" size="2622448">
+      <assemblyIdentity name="Bunifu.Core" version="1.9.0.1" publicKeyToken="E8E24CCD28363FE9" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>zrwU/pYde6TEW7mWK/0IXIGceyo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Bunifu_UI_v1.5.3.dll" size="391168">
+      <assemblyIdentity name="Bunifu_UI_v1.5.3" version="1.5.3.0" publicKeyToken="E8E24CCD28363FE9" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>AJWI3uQ9X2fdXJCAiwoQpIvci+A=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Pinnacle.exe" size="1711104">
+      <assemblyIdentity name="Pinnacle" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>1YwYR7pHpA0pI+76eFLWMtUYWEk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=DESKTOP-13LKFD2\PCP" issuerKeyHash="819274f759f900e18078a5fa9b16a0f3468fb393" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>idWCqaX8SoY904zhZMed3cPU2a0=</DigestValue></Reference></SignedInfo><SignatureValue>SC+NMB+EjjjmAWbxn7RC9q6Psoihgnmeu6YXLv1a4fJYKxn7lUYMUGVDuisTrE59H+283XuAlHWZWyKpMhKnIT1ebhsW5IEYe2apHntK35hsBdG2kPkYQVgqHyV3SdPbwYpzZdxvq6AvdySa/HLchV6qyrYGVBnUegEU+aU7cZg=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>qu7cjAYD5d0xf6bB20s6/czaFnfivlgaaBJDAIhmvpOwfNyTH3MV1fAqloMNvvKJq2r9InGTSpaLqc2bftVueIUe6Td051T/lat7UajWcUhYL1FYAhvCv+Az1Xwvph/zIfuG+0YFAnL7ZSqSws4CCFO+uWu3sdFfnYHFe3ZaXqk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="add9d4c3dd9dc764e18cd33d864afca5a982d589" Description="" Url=""><as:assemblyIdentity name="Pinnacle.exe" version="1.0.0.6" publicKeyToken="e06fdff7d8a94273" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-13LKFD2\PCP</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>8Y66+nS21DXWPCwP7MTNUCTtuhg=</DigestValue></Reference></SignedInfo><SignatureValue>eW5uUNc3KwAh8pfl/g9LkF3W6Nqm4RvUP2cGWEpJj54a6lG5GNO2GHKe8Y3BXxzapL1Si/WuYHT16SEqAFiKEGA3wEaALxc+E7Ik7KiNSbuIox6Kw3ZRUmOJ1zBINultyK/t6uQbeFsndF2U5qXO2XZq7R6ABp0umGGlWJK72s4=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>qu7cjAYD5d0xf6bB20s6/czaFnfivlgaaBJDAIhmvpOwfNyTH3MV1fAqloMNvvKJq2r9InGTSpaLqc2bftVueIUe6Td051T/lat7UajWcUhYL1FYAhvCv+Az1Xwvph/zIfuG+0YFAnL7ZSqSws4CCFO+uWu3sdFfnYHFe3ZaXqk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB5TCCAU6gAwIBAgIQIrbT1Q+hEp5EJeljSOXRKDANBgkqhkiG9w0BAQUFADAxMS8wLQYDVQQDHiYARABFAFMASwBUAE8AUAAtADEAMwBMAEsARgBEADIAXABQAEMAUDAeFw0xOTEwMDYwOTE1NDhaFw0yMDEwMDUxNTE1NDhaMDExLzAtBgNVBAMeJgBEAEUAUwBLAFQATwBQAC0AMQAzAEwASwBGAEQAMgBcAFAAQwBQMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCq7tyMBgPl3TF/psHbSzr9zNoWd+K+WBpoEkMAiGa+k7B83JMfcxXV8CqWgw2+8omrav0icZNKloupzZt+1W54hR7pN3TnVP+Vq3tRqNZxSFgvUVgCG8K/4DPVfC+mH/Mh+4b7RgUCcvtlKpLCzgIIU765a7ex0V+dgcV7dlpeqQIDAQABMA0GCSqGSIb3DQEBBQUAA4GBAEWmMk1GYv6xcdRcT8BRrMq1YVeO2MxHI5TGDuzVwajOLooHaQQ0MfEcMhBFpZVVv4E5gLyxwbtacRsH8lMUBtUblxwDSTwsA0Pi6wF9gOuOPBHHx+o+n2sBjI7CzyNZM9N0VplcK22LKMpqoBDqpZTpuShZsYEoedYpBpHbk2q8</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
